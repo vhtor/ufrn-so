@@ -1,0 +1,3 @@
+O QT Creator tem letras muito pequenas. Você pode configurar o estilo indo em Tools > Options > Text Editor > Font & Color. Conselho pegar tema DARK.
+
+O QT Creator pode auto completar o seu comando apertando ctrl+space. Entretanto, por padrão não o faz corretamente. Para habilitar, acesse Help > About plugins e desmarque a opção ClangCodeModel. Reinicie o QT. Pronto!
