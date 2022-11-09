@@ -47,7 +47,7 @@ MainWindow::~MainWindow()
 /*
  * Ao clicar, trens começam execução
  */
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_pushButton_ligar_clicked()
 {
     trem1->start();
     trem2->start();
@@ -56,7 +56,7 @@ void MainWindow::on_pushButton_clicked()
 /*
  * Ao clicar, trens param execução
  */
-void MainWindow::on_pushButton_2_clicked()
+void MainWindow::on_pushButton_parar_clicked()
 {
     trem1->terminate();
     trem2->terminate();
