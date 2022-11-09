@@ -1,1 +1,5 @@
+// Arquivos de configuração do VSCode
+*.code-workspace
+
+// Arquivos de build do QTCreator
 /build*
