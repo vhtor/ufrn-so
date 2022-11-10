@@ -14,26 +14,59 @@ void Trem::run(){
     while(true){
         switch(ID){
         case 1:     //Trem 1
-            if (y == 30 && x <330)
+            if (y == 50 && x < 620)
                 x+=10;
-            else if (x == 330 && y < 150)
+            else if (x == 620 && y < 180)
                 y+=10;
-            else if (x > 60 && y == 150)
+            else if (x > 450 && y == 180)
                 x-=10;
             else
                 y-=10;
-            emit updateGUI(ID, x,y);    //Emite um sinal
+            emit updateGUI(ID, x, y);    //Emite um sinal
             break;
         case 2: //Trem 2
-            if (y == 30 && x <600)
+            if (y == 50 && x < 790)
                 x+=10;
-            else if (x == 600 && y < 150)
+            else if (x == 790 && y < 180)
                 y+=10;
-            else if (x > 330 && y == 150)
+            else if (x > 620 && y == 180)
                 x-=10;
             else
                 y-=10;
-            emit updateGUI(ID, x,y);    //Emite um sinal
+            emit updateGUI(ID, x, y);    //Emite um sinal
+            break;
+        case 3: //Trem 3
+            if (y == 180 && x < 530)
+                x+=10;
+            else if (x == 530 && y < 330)
+                y+=10;
+            else if (x > 340 && y == 330)
+                x-=10;
+            else
+                y-=10;
+            emit updateGUI(ID, x, y);    //Emite um sinal
+            break;
+        case 4: //Trem 4
+            if (y == 180 && x < 710)
+                x+=10;
+            else if(x == 710 && y < 330)
+                y+=10;
+            else if (x > 530 && y == 330)
+                x-=10;
+            else
+                y-=10;
+            emit updateGUI(ID, x, y);    //Emite um sinal
+            break;
+        case 5: //Trem 5
+            if (y == 180 && x < 940)
+                x+=10;
+            else if(x == 940 && y < 330)
+                y+=10;
+            else if (x > 710 && y == 330)
+                x-=10;
+            else
+                y-=10;
+            emit updateGUI(ID, x, y);    //Emite um sinal
             break;
         default:
             break;
