@@ -1,18 +1,26 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <pthread.h>
+#define SHARED 0
+
+pthread_mutex_t regioes[6];
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    for (int i = 0; i < 6; i++) {
+        pthread_mutex_init(&regioes[i], NULL);
+    }
+
     ui->setupUi(this);
 
     //Cria o trem com seu (ID, posição X, posição Y)
-    trem1 = new Trem(1,450,50);
-    trem2 = new Trem(2,640,50);
-    trem3 = new Trem(3,340,200);
-    trem4 = new Trem(4,530,180);
-    trem5 = new Trem(5,940,250);
+    trem1 = new Trem(1,450,50,regioes);
+    trem2 = new Trem(2,710,180,regioes);
+    trem3 = new Trem(3,340,200,regioes);
+    trem4 = new Trem(4,610,330,regioes);
+    trem5 = new Trem(5,940,250,regioes);
 
     /*
      * Conecta o sinal UPDATEGUI à função UPDATEINTERFACE.
@@ -78,4 +86,7 @@ void MainWindow::on_pushButton_parar_clicked()
     trem3->terminate();
     trem4->terminate();
     trem5->terminate();
+    for (int i = 0; i < 6; i++) {
+        pthread_mutex_destroy(&regioes[i]);
+    }
 }
