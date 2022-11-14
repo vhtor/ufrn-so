@@ -73,8 +73,9 @@ void Trem::run(){
         }
         msleep(velocidade);
     }
+} 
+
+void Trem::setVelocidade(int value){
+    this->velocidade = value;
 }
-
-
-
 

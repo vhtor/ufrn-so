@@ -386,6 +386,96 @@
      <string/>
     </property>
    </widget>
+   <widget class="QSlider" name="horizontalSlider_trem1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">.QSlider::handle:horizontal {
+    background: blue;
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_trem2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>140</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">.QSlider::handle:horizontal {
+    background: red;
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_trem3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>180</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">.QSlider::handle:horizontal {
+    background: green;
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_trem4">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>220</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">.QSlider::handle:horizontal {
+    background: purple;
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_trem5">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>260</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">.QSlider::handle:horizontal {
+    background: orange;
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
    <zorder>label_trilho2</zorder>
    <zorder>label_trilho1</zorder>
    <zorder>pushButton_ligar</zorder>
@@ -407,6 +497,11 @@
    <zorder>label_trem1</zorder>
    <zorder>label_trem2</zorder>
    <zorder>label_trem3</zorder>
+   <zorder>horizontalSlider_trem1</zorder>
+   <zorder>horizontalSlider_trem2</zorder>
+   <zorder>horizontalSlider_trem3</zorder>
+   <zorder>horizontalSlider_trem4</zorder>
+   <zorder>horizontalSlider_trem5</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
