@@ -13,6 +13,15 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="label_trem1">
     <property name="geometry">
@@ -23,8 +32,11 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="styleSheet">
-     <string notr="true">QLabel { background: rgb(255, 255, 255)}</string>
+     <string notr="true">QLabel { background: rgb(246, 211, 45)}</string>
     </property>
     <property name="text">
      <string>T1</string>
@@ -97,14 +109,17 @@
    <widget class="QLabel" name="label_trem2">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>50</y>
+      <x>710</x>
+      <y>180</y>
       <width>20</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLabel { background: rgb(255, 255, 255)};</string>
+     <string notr="true">QLabel { 
+	background: rgb(246, 97, 81);
+	color: white;
+};</string>
     </property>
     <property name="text">
      <string>T2</string>
@@ -316,7 +331,10 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLabel { background: rgb(255, 255, 255)}</string>
+     <string notr="true">QLabel { 
+	background: black;
+	color: white
+}</string>
     </property>
     <property name="text">
      <string>T3</string>
@@ -325,14 +343,17 @@
    <widget class="QLabel" name="label_trem4">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>180</y>
+      <x>620</x>
+      <y>330</y>
       <width>20</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLabel { background: rgb(255, 255, 255)}</string>
+     <string notr="true">QLabel { 
+	background: rgb(129, 61, 156);
+	color: white;
+}</string>
     </property>
     <property name="text">
      <string>T4</string>
@@ -348,7 +369,9 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLabel { background: rgb(255, 255, 255)}</string>
+     <string notr="true">QLabel { 
+	background: rgb(0, 239, 255);
+}</string>
     </property>
     <property name="text">
      <string>T5</string>
@@ -386,6 +409,155 @@
      <string/>
     </property>
    </widget>
+   <widget class="QSlider" name="horizontalSlider_trem1">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>140</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>SizeHorCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::handle:horizontal { 
+	background: rgb(246, 211, 45);
+}</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>10</number>
+    </property>
+    <property name="sliderPosition">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+    <property name="invertedControls">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_trem2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>190</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>SizeHorCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::handle:horizontal { background: rgb(246, 97, 81)}</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_trem3">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>240</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>SizeHorCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::handle:horizontal { background: black}</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_trem4">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>290</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>SizeHorCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::handle:horizontal { 
+	background: rgb(129, 61, 156);
+}</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_trem5">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>340</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>SizeHorCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::handle:horizontal { 
+	background: rgb(0, 239, 255);
+}</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
    <zorder>label_trilho2</zorder>
    <zorder>label_trilho1</zorder>
    <zorder>pushButton_ligar</zorder>
@@ -407,6 +579,11 @@
    <zorder>label_trem1</zorder>
    <zorder>label_trem2</zorder>
    <zorder>label_trem3</zorder>
+   <zorder>horizontalSlider_trem1</zorder>
+   <zorder>horizontalSlider_trem2</zorder>
+   <zorder>horizontalSlider_trem3</zorder>
+   <zorder>horizontalSlider_trem4</zorder>
+   <zorder>horizontalSlider_trem5</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -414,7 +591,7 @@
      <x>0</x>
      <y>0</y>
      <width>1280</width>
-     <height>22</height>
+     <height>23</height>
     </rect>
    </property>
   </widget>

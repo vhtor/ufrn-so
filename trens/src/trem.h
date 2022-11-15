@@ -1,6 +1,5 @@
 #ifndef TREM_H
 #define TREM_H
-
 #include <QThread>
 
 /*
@@ -13,8 +12,9 @@
 class Trem: public QThread{
  Q_OBJECT
 public:
-    Trem(int,int,int);  //construtor
-    void run();         //função a ser executada pela thread
+    Trem(int,int,int,pthread_mutex_t*); // construtor
+    void run();                         // função a ser executada pela thread
+    void setVelocidade(int);        // função chamada quando há mudança nos sliders
 
 
 //Cria um sinal
@@ -26,6 +26,7 @@ private:
    int y;           //posição Y do trem na tela
    int ID;          //ID do trem
    int velocidade;  //Velocidade. É o tempo de dormir em milisegundos entre a mudança de posição do trem
+   pthread_mutex_t *regioes; // Ponteiro para o array de regioes criticas
 };
 
 #endif // TREM_H
