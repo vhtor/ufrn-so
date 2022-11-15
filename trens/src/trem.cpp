@@ -75,7 +75,11 @@ void Trem::run(){
     }
 } 
 
-void Trem::setVelocidade(int value){
-    this->velocidade = value;
+void Trem::setVelocidade(int v){
+    if(v <= 0){
+        velocidade = 0;
+        return;
+    }
+    velocidade = 99*7/v;
 }
 
