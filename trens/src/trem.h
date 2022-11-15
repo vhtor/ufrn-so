@@ -12,8 +12,9 @@
 class Trem: public QThread{
  Q_OBJECT
 public:
-    Trem(int,int,int,pthread_mutex_t*);  //construtor
-    void run();         //função a ser executada pela thread
+    Trem(int,int,int,pthread_mutex_t*); // construtor
+    void run();                         // função a ser executada pela thread
+    void setVelocidade(int);        // função chamada quando há mudança nos sliders
 
 
 //Cria um sinal

@@ -90,3 +90,23 @@ void MainWindow::on_pushButton_parar_clicked()
         pthread_mutex_destroy(&regioes[i]);
     }
 }
+
+void MainWindow::on_horizontalSlider_trem1_valueChanged(int value){
+    trem1->setVelocidade(value);
+}
+
+void MainWindow::on_horizontalSlider_trem2_valueChanged(int value){
+    trem2->setVelocidade(value);
+}
+
+void MainWindow::on_horizontalSlider_trem3_valueChanged(int value){
+    trem3->setVelocidade(value);
+}
+
+void MainWindow::on_horizontalSlider_trem4_valueChanged(int value){
+    trem4->setVelocidade(value);
+}
+
+void MainWindow::on_horizontalSlider_trem5_valueChanged(int value){
+    trem5->setVelocidade(value);
+}

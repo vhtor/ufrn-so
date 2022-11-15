@@ -23,6 +23,11 @@ public slots:
 private slots:
     void on_pushButton_ligar_clicked();
     void on_pushButton_parar_clicked();
+    void on_horizontalSlider_trem1_valueChanged(int value);
+    void on_horizontalSlider_trem2_valueChanged(int value);
+    void on_horizontalSlider_trem3_valueChanged(int value);
+    void on_horizontalSlider_trem4_valueChanged(int value);
+    void on_horizontalSlider_trem5_valueChanged(int value);
 
 private:
     Ui::MainWindow *ui;

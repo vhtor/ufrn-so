@@ -13,8 +13,7 @@ Trem::Trem(int ID, int x, int y, pthread_mutex_t *mutex)
 }
 
 //Função a ser executada após executar trem->START
-void Trem::run()
-{
+void Trem::run() {
     while(true)
     {
         switch(ID)
@@ -177,6 +176,7 @@ void Trem::run()
     }
 }
 
-
-
-
+// Função a ser executada quando mudar o slider de velocidade
+void Trem::setVelocidade(int value) {
+    this->velocidade = value;
+}

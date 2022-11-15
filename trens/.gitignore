@@ -1,5 +1,6 @@
 // Arquivos de configuração do VSCode
 *.code-workspace
 
-// Arquivos de build do QTCreator
+// Arquivos de build e usuario do QTCreator
 /build*
+src/Trem.pro.user*
